@@ -44,3 +44,9 @@ venv/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ---- 本机工具与凭证（绝不能进公开仓库）----
+tools/                # 本地 gh CLI，以及 ghconfig/hosts.yml 里的登录 token
+gh_auth*.log
+gh_in.txt
+gh.zip
