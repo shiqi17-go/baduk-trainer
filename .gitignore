@@ -1,0 +1,46 @@
+# =============================================================================
+# 围棋 AI 教学助手 — .gitignore
+# 仓库只放源码（约 250KB）。引擎、模型、CUDA 运行库这些大文件（几个 GB）
+# 全部能从官方源重新下载，不需要、也不应该进 GitHub（单文件上限 100MB）。
+# =============================================================================
+
+# ---- 大文件：KataGo 引擎 + 模型 + CUDA 运行库（由 setup.py 自动下载）----
+engine/
+models/
+downloads/
+*.bin
+*.bin.gz
+
+# ---- 构建产物与缓存 ----
+build/
+dist/
+*_buildtmp/
+*.piptmp/
+.tmp/
+_build/
+
+# ---- 运行时数据（每位用户自己的，不上传）----
+library.db
+library_test.db
+logs/
+*.log
+error.log
+trainer_error.log
+selftest_report.txt
+
+# ---- Python 缓存 ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
